@@ -1,0 +1,2 @@
+[Database]
+uri: mysql+pymysql://root@localhost/correio

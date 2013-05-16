@@ -1,0 +1,10 @@
+<ul>
+	{% for event in events %}
+	<li>
+		Hora: {{ event.datetime }}<br />
+		Local: {{ event.local }}<br />
+		Atividade: {{ event.activity }}
+	</li>
+	{% endfor %}
+</ul>
+

@@ -18,7 +18,7 @@ def parse(page):
         elif line_num == 1:
             entry["datetime"] = history[-1]["datetime"]
             entry["local"] = history[-1]["local"]
-            entry["activity"] = line.contents[0].get_text().encode('latin-1')
+            entry["activity"] = line.contents[0].get_text()
         history.append(entry)
     return history
 

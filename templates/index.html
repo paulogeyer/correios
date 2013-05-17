@@ -1,0 +1,14 @@
+<ul>
+	{% for user in users %}
+	<li>{{ user.objects }}</li>
+	{% endfor %}
+</ul>
+<form action="/add" method="post">
+	E-Mail:<br />
+	<input type="text" name="email" /><br />
+	ID do objeto:<br />
+	<input type="text" name="id" /><br />
+	Descrição:<br />
+	<input type="text" name="desc"><br />
+	<input type="submit" />
+</form>

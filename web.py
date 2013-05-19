@@ -114,7 +114,7 @@ def add():
 
     confirmation_code = hashlib.md5(user.email+str(random.random())).hexdigest()
     message = Message("Confirme o rastreamento do pacote",
-                      sender=app.config["DEFAULT_MAIL_SENDER"]
+                      sender=app.config["DEFAULT_MAIL_SENDER"],
                       recipients=[user.email])
     message.body = "Para confirmar o rastreamento, acesse http://tracker.auszug.com.br/confirm/"+confirmation_code
     mail.send(message)

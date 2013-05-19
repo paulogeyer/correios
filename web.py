@@ -94,7 +94,6 @@ def fetch_events(id):
 
 @app.route("/")
 def root():
-    users = session.query(User).all()
     return render_template('index.html')
 
 @app.route("/add", methods=["post"])

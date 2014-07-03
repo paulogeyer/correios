@@ -1,0 +1,4 @@
+sqlalchemy
+Flask
+python-dateutil
+Flask-Mail
